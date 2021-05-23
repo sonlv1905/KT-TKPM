@@ -208,12 +208,16 @@
 				</tr>
 				<tr>
 					<td>
-						<form class="form-horizontal">
+						<form class="form-horizontal" method="post" action="/pay">
 							<div class="control-group">
 								
 							</div>
 							<div class="control-group">
 								<label class="control-label" >Click to pay with Paypal </label>
+								<label class="control-label"><strong> Total: </strong> </label>
+								<div class="controls">
+									<input name="price" type="text" placeholder="qty" value="${total}" id="total-order" >					
+								</div>
 								<div class="controls">
 									<button type="submit" class="btn btn-primary">PAYPAL</button>
 								</div>
